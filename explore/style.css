@@ -1,0 +1,122 @@
+body{
+    font-family: sans-serif;
+    background: #f7f7f7;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #00000099;
+}
+.nav{
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.logo a{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+.links a{
+    text-transform: capitalize;
+    color: #ffffff;
+    padding: 0 1rem;
+}
+
+.content{
+    min-height: 100vh;
+    background: url(./images/image1.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transition: all 1s linear;
+}
+.details{
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    width: 300px;
+    height: 350px;
+    background: #00000099;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: .3rem;
+}
+.details h2{
+    text-transform: capitalize;
+    margin-bottom: .5rem;
+}
+.details p{
+    line-height: 1.5;
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+    margin-bottom: 2rem;
+}
+.btn{
+    padding: .9rem 2rem;
+    background: #4cdb0a;
+    color: #000000;
+    text-transform: capitalize;
+    border-radius: 2rem;
+}
+.tabs{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    width: 700px;
+    height: 300px;
+    border-radius: .3rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+.tab-box{
+    flex: 1 1 30%;
+    height: 100%;
+    border-radius: .3rem;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.tab-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+    transition: .3s linear;
+}
+.tab-box img:hover{
+    filter: blur(0px);
+}
+.tab-box span{
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #4cdb0a;
+    text-transform: capitalize;
+    font-size: 1rem;
+    transition: all .3s linear;
+}
+.tab-box:hover span{
+    bottom: 5%;
+}
